@@ -1,0 +1,81 @@
+{
+  "project": "نظام استخراج وتصنيف بيانات البطاقة الشخصية اليمنية (Yemen ID OCR & ML)",
+  "timestamp": "2026-10-22 06:27:22",
+  "model_file": "results\\yemen_id_model.joblib",
+  "best_model": "RandomForest",
+  "model_evaluation_metrics": {
+    "accuracy_percent": 100.0,
+    "precision_percent": 100.0,
+    "recall_percent": 100.0,
+    "f1_score_percent": 100.0,
+    "roc_auc_score": 1.0
+  },
+  "field_extraction_accuracy": [
+    {
+      "field_key": "national_id",
+      "field_name_ar": "الرقم الوطني",
+      "source": "الوجه الأمامي",
+      "correct_extractions": 4,
+      "total_samples": 4,
+      "accuracy_percentage": 100.0
+    },
+    {
+      "field_key": "full_name",
+      "field_name_ar": "الاسم الكامل",
+      "source": "الوجه الأمامي",
+      "correct_extractions": 4,
+      "total_samples": 4,
+      "accuracy_percentage": 100.0
+    },
+    {
+      "field_key": "birth_date",
+      "field_name_ar": "تاريخ الميلاد",
+      "source": "الوجه الأمامي",
+      "correct_extractions": 1,
+      "total_samples": 4,
+      "accuracy_percentage": 25.0
+    },
+    {
+      "field_key": "birth_place",
+      "field_name_ar": "محل الميلاد",
+      "source": "الوجه الأمامي",
+      "correct_extractions": 4,
+      "total_samples": 4,
+      "accuracy_percentage": 100.0
+    },
+    {
+      "field_key": "issuing_authority",
+      "field_name_ar": "جهة الإصدار",
+      "source": "الوجه الخلفي",
+      "correct_extractions": 4,
+      "total_samples": 4,
+      "accuracy_percentage": 100.0
+    },
+    {
+      "field_key": "issue_date",
+      "field_name_ar": "تاريخ الإصدار",
+      "source": "الوجه الخلفي",
+      "correct_extractions": 4,
+      "total_samples": 4,
+      "accuracy_percentage": 100.0
+    },
+    {
+      "field_key": "expiry_date",
+      "field_name_ar": "تاريخ الانتهاء",
+      "source": "الوجه الخلفي",
+      "correct_extractions": 4,
+      "total_samples": 4,
+      "accuracy_percentage": 100.0
+    }
+  ],
+  "saved_artifacts": [
+    "results/yemen_id_model.joblib",
+    "results/confusion_matrix.png",
+    "results/roc_curve.png",
+    "results/performance_metrics.png",
+    "results/field_extraction_accuracy.png",
+    "results/field_extraction_report.csv",
+    "results/evaluation_metrics.json",
+    "results/training_log.txt"
+  ]
+}
